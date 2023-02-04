@@ -16,9 +16,9 @@ const Length_slider = document.getElementById("Length");
 Length_slider.addEventListener("mouseup", onSliderChange, false);
 Length_slider.addEventListener("touchend", onSliderChange, false);
 
-const Hight_slider = document.getElementById("Hight");
-Hight_slider.addEventListener("mouseup", onSliderChange, false);
-Hight_slider.addEventListener("touchend", onSliderChange, false);
+const Height_slider = document.getElementById("Height");
+Height_slider.addEventListener("mouseup", onSliderChange, false);
+Height_slider.addEventListener("touchend", onSliderChange, false);
 
 const U_slider = document.getElementById("U");
 U_slider.addEventListener("mouseup", onSliderChange, false);
@@ -57,8 +57,8 @@ async function compute() {
   const param2 = new RhinoCompute.Grasshopper.DataTree("Length");
   param2.append([0], [Length_slider.valueAsNumber]);
 
-  const param3 = new RhinoCompute.Grasshopper.DataTree("Hight");
-  param3.append([0], [Hight_slider.valueAsNumber]);
+  const param3 = new RhinoCompute.Grasshopper.DataTree("Height");
+  param3.append([0], [Height_slider.valueAsNumber]);
   
   const param4 = new RhinoCompute.Grasshopper.DataTree("U");
   param4.append([0], [U_slider.valueAsNumber]);
